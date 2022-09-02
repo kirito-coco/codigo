@@ -9,7 +9,7 @@ Comando para configurar el usuario y el correo
 
 * Para configurar el correo
 ```bash
-   git --config --global user.mail "email"
+git --config --global user.mail "email"
 ```
 
 * Para poder configurar el usernament
@@ -27,4 +27,14 @@ git init
 * Para ver el estado de nuestros cambios
 ```bash
 git status
+```
+
+* Agrega los archivos a la memoria de la pc
+```bash
+git add .
+```
+
+* Crear el registro de los cambios realizados
+```bash
+git commit -m "comentario"
 ```
