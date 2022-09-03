@@ -12,7 +12,7 @@ Comando para configurar el usuario y el correo
 git --config --global user.mail "email"
 ```
 
-* Para poder configurar el usernament
+* Para poder configurar el usernamen
 ```bash
 git config --global user.name "username"
 ```
@@ -37,4 +37,8 @@ git add .
 * Crear el registro de los cambios realizados
 ```bash
 git commit -m "comentario"
+```
+
+```bash
+git branch -M main
 ```
