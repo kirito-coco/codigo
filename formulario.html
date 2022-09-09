@@ -10,20 +10,22 @@
 <!-- PARA PODER CREAR UN FORMULARIO NECESITAMOS LA ETIQUETA form -->
 <form action="">
 <!-- lo que está dentro son las partes del formulario -->
-<p><input id="input-nombre" placeholder="Ingrese su nombre" name="nombre" value="pepo" required /></p><!-- input tipo texto  -->
+<p><input id="input-nombre" placeholder="Ingrese su nombre" name="nombre" value="pepo" readonly required /></p><!-- input tipo texto  -->
 <p><input type="number" placeholder="Ingrese su edad" name="edad" value="92" required /></p> <!-- input tipo numero -->
-<p><input type="email" placeholder="Ingrese su correo" name="pepo@gmail.com" required /></p> <!-- input tipo email -->
-<p><input type="password" placeholder="Ingrese su contraseña" name="password" required /></p> <!-- input tipo contraseña -->
+<p><input type="email" placeholder="Ingrese su correo" name="pepo@gmail.com" value="pepo@gmail.com" required /></p> <!-- input tipo email -->
+<p><input type="password" placeholder="Ingrese su contraseña" name="password" value="1234567" required /></p> <!-- input tipo contraseña -->
 <p><input id="input-fecha" value="2022-09-08" type="date" required /></p> <!-- input tipo fecha -->
+<p><input id="input-dni" type="number" placeholder="Ingrese su DNI" maxlength="8" style="width:140px" /></p>
 <!-- LISTA DE OPCIONES -->
 <p>
   <select required>
     <!--
         apuntes extras
-        disabled: para bloquear
+        disabled: texto inhabilitado y no envía datos
+        readonly: texto visible pero no editable y permite enviar datos
         selected: input seleccionado
     -->
-    <option value="" disabled>Selecciona un curso</option>
+    <option value="1" disabled>Selecciona un curso</option>
     <option value="curso-react" selected>Curso de ReactJS</option>
     <option value="curso-html">Curso de CSS</option>
     <option value="curso-css">Curso de PHP</option>
