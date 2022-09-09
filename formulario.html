@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario</title>
+</head>
+<body>
+<!-- PARA PODER CREAR UN FORMULARIO NECESITAMOS LA ETIQUETA form -->
+<form action="">
+<!-- lo que está dentro son las partes del formulario -->
+<p><input id="input-nombre" placeholder="Ingrese su nombre" value="" /></p><!-- input tipo texto  -->
+<p><input type="number" placeholder="Ingrese su edad" /></p> <!-- input tipo numero -->
+<p><input type="email" placeholder="Ingrese su correo"></p> <!-- input tipo email -->
+<p><input type="password" placeholder="Ingrese su contraseña" /></p> <!-- input tipo contraseña -->
+<p><input type="date" /></p> <!-- input tipo fecha -->
+<!-- LISTA DE OPCIONES -->
+<p>
+  <select>
+    <option value="" disabled selected>Selecciona un curso</option>
+    <!--
+      apuntes extras
+      disabled: para bloquear
+      selected: input seleccionado
+     -->
+    <option value="">Curso de ReactJS</option>
+    <option value="">Curso de CSS</option>
+    <option value="">Curso de PHP</option>
+    <option value="">Curso de HTML</option>
+  </select>
+</p>
+<!-- BOTONES PARA ENVIAR DATOS -->
+<button type="submit">Enviar datos con button</button>
+<input type="submit" value="Enviar datos con input" />
+</form>
+</body>
+</html>
