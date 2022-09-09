@@ -10,24 +10,24 @@
 <!-- PARA PODER CREAR UN FORMULARIO NECESITAMOS LA ETIQUETA form -->
 <form action="">
 <!-- lo que está dentro son las partes del formulario -->
-<p><input id="input-nombre" placeholder="Ingrese su nombre" value="" /></p><!-- input tipo texto  -->
-<p><input type="number" placeholder="Ingrese su edad" /></p> <!-- input tipo numero -->
-<p><input type="email" placeholder="Ingrese su correo"></p> <!-- input tipo email -->
-<p><input type="password" placeholder="Ingrese su contraseña" /></p> <!-- input tipo contraseña -->
-<p><input type="date" /></p> <!-- input tipo fecha -->
+<p><input id="input-nombre" placeholder="Ingrese su nombre" name="nombre" value="pepo" required /></p><!-- input tipo texto  -->
+<p><input type="number" placeholder="Ingrese su edad" name="edad" value="92" required /></p> <!-- input tipo numero -->
+<p><input type="email" placeholder="Ingrese su correo" name="pepo@gmail.com" required /></p> <!-- input tipo email -->
+<p><input type="password" placeholder="Ingrese su contraseña" name="password" required /></p> <!-- input tipo contraseña -->
+<p><input id="input-fecha" value="2022-09-08" type="date" required /></p> <!-- input tipo fecha -->
 <!-- LISTA DE OPCIONES -->
 <p>
-  <select>
-    <option value="" disabled selected>Selecciona un curso</option>
+  <select required>
     <!--
-      apuntes extras
-      disabled: para bloquear
-      selected: input seleccionado
-     -->
-    <option value="">Curso de ReactJS</option>
-    <option value="">Curso de CSS</option>
-    <option value="">Curso de PHP</option>
-    <option value="">Curso de HTML</option>
+        apuntes extras
+        disabled: para bloquear
+        selected: input seleccionado
+    -->
+    <option value="" disabled>Selecciona un curso</option>
+    <option value="curso-react" selected>Curso de ReactJS</option>
+    <option value="curso-html">Curso de CSS</option>
+    <option value="curso-css">Curso de PHP</option>
+    <option value="curso-angular">Curso de HTML</option>
   </select>
 </p>
 <!-- BOTONES PARA ENVIAR DATOS -->
