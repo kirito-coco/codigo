@@ -28,6 +28,14 @@ h2, h3 {
   margin: 20px;
 }
 
+.product-cell:hover {
+  background-color: #EAECEE;
+  border: 1px solid #FBFCFC;
+  box-shadow: 0 0 4px #000;
+  cursor: pointer;
+  transition: all .3s;
+}
+
 .celular > h2 {
   color: purple;
 }
