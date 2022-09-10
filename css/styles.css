@@ -1,5 +1,9 @@
 /* SELECTORES */
 /** selector de elemento **/
+body {
+  background-color: #FBFCFC;
+}
+
 h1 {
   color: green;
   background-color: beige;
@@ -17,13 +21,11 @@ h2, h3 {
 }
 
 .product-cell {
-  border-radius: 10px;
+  background-color: #FBFCFC;
+  border: 1px solid #EAECEE;
+  border-radius: 4px;
   padding:10px;
   margin: 20px;
-}
-
-.celular {
-  border: 2px solid red;
 }
 
 .celular > h2 {
@@ -34,20 +36,12 @@ h2, h3 {
   color: #656567;
 }
 
-.laptop {
-  border: 2px solid green;
-}
-
 .laptop > h2 {
   color: blue;
 }
 
 .laptop > h3 {
   color: cadetblue;
-}
-
-.audifono {
-  border: 2px solid blue;
 }
 
 .audifono > h2 {
