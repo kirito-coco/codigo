@@ -36,6 +36,16 @@ h2, h3 {
   transition: all .3s;
 }
 
+.product-cell > img {
+  border: .2px solid #FBFCFC;
+  width: 200px;
+}
+
+.product-cell:hover > img {
+  opacity: 0.8;
+  border:.2px solid #000;
+}
+
 .celular > h2 {
   color: purple;
 }
