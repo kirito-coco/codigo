@@ -4,13 +4,15 @@
   font-size: 20px;
 }
 
+/* USO DE LA FUENTE */
 body {
   background-color: #FBFCFC;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 h1 {
-  color: green;
-  background-color: beige;
+  color: #FFFFFF;
+  background-color: #000000;
   padding: 20px;
   text-align: center;
   font-size: 3rem;
@@ -21,7 +23,7 @@ h2, h3 {
 }
 
 #div-temas {
-  display: none;
+  display: block;
 }
 
 .product-cell {

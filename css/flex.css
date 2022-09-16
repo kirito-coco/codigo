@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: red;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #FFFFFF;
+}
+
+.padre {
+  display: flex;
+  height: 100vh;
+  /*respeta el ancho de la pantalla y si el elemento siguiente no respeta el ancho pasa a la siguiente fila*/
+  flex-wrap: wrap;
+  /*permite alinear elementos de lado horizontal
+  flex-start: izquierda
+  center: medio
+  flex-end: derecha
+  space-between: manda al elemento de extremo a extremo
+  space-around: parecido a space-between  pero los espacios son distintos
+  space-evenly: parecido s space-around pero los espacios son iguales
+  */
+  justify-content: space-between;
+  /* align-items es la propiedad de flex que permite alinear verticalmente y comparte todas las propiedades de justify-content*/
+  align-items: center;
+}
+
+.hijo {
+  width: 25%;
+  height: 100px;
+  border: solid 1px green;
+  background-color: #FFFFFF;
+}
